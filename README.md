@@ -68,4 +68,5 @@ document.getElementById("demo").innerHTML = n;
 ```
 
 Output:
+Search a string for "divya", and display the position of the match:
 3
