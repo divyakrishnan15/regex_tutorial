@@ -179,7 +179,7 @@ Output:
 Found i in position 2 in the text: This is a car!
 
 
-##Regular Expression Modifiers / flags
+## Regular Expression Modifiers / flags
 | Modifier      | Description |
 | ----------- | ----------- |
 | i   | Case-insensitive matching |
@@ -195,7 +195,7 @@ Found i in position 2 in the text: This is a car!
 
 
 
-##Metacharacters
+## Metacharacters
 | Metacharacter      | Description |
 | ----------- | ----------- |
 | \w     | Match alphanumeric (a-z, A-Z, 0-9 and underscore(_))   |
@@ -217,9 +217,48 @@ Found i in position 2 in the text: This is a car!
 
 
 
-##Quantifiers 
+## Quantifiers 
 | Quantifier      | Description |
 | ----------- | ----------- |
 | n+     | Match a string with atleast one n  |
 | n*   | Match a string with 0 or more occurances of n  |
 | n?   | Match a string with 0 or 1 occurance of n   |
+
+
+
+## Sets
+| Modifier      | Description |
+| ----------- | ----------- |
+| [abc]   | Matches any of a (or) b (or) c. It does not match abc |
+| [a-z]   | Matches any alphabet from a-z |
+| [A-Z]   | Matches any alphabet in Capital from A-Z  |
+| [a\-p]  | Matches a, -, or p. It matches – because \ escapes it.  |
+| [-z]   | Matches – or z   |
+| [a-z0-9]   | 	Matches characters from a to z or from 0 to 9.   |
+| [(+*)]   | Special characters become literal inside a set, so this matches (, +, *, or )   |
+| [^ab5]  | Adding ^ excludes any character in the set. Here, it matches characters that are not a, b, or 5    |
+| \[a\]   | 	Matches [a] because both parentheses [ ] are escaped  |
+
+
+
+## Groups:
+| Expresions      | Description |
+| ----------- | ----------- |
+| ( )   | 	Matches the expression inside the parentheses and groups it which we can capture as required |
+| (?#…)   | Read a comment |
+| (?PAB)   | Matches the expression AB, which can be retrieved with the group name.  |
+| (?:A)   | 	Matches the expression as represented by A, but cannot be retrieved afterwards.  |
+| (?P=group)   | Matches the expression matched by an earlier group named “group”   |
+
+
+
+
+
+## Assertions:
+| Expression      | Description |
+| ----------- | ----------- |
+| A(?=B)   | This matches the expression A only if it is followed by B. (Positive look ahead assertion) |
+| A(?!B)   | 	This matches the expression A only if it is not followed by B. (Negative look ahead assertion) |
+| (?<=B)A   | 	This matches the expression A only if B is immediate to its left.  (Positive look behind assertion)  |
+| (?<!B)A   | This matches the expression A only if B is not immediately to its left. (Negative look behind assertion)  |
+| (?()|)   | 	If else conditional   |
