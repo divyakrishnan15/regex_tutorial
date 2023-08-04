@@ -1,5 +1,3 @@
-# regex_tutorial
-regular expression (regex) tutorial
 
  
 <h1 align="center">REGEX (regular expression) Tutorial👋</h1>
