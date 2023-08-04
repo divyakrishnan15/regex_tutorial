@@ -53,14 +53,13 @@ asdas
 <html>
 <body>
 
-<h1>JavaScript String Methods</h1>
-<p>Search a string for "W3Schools", and display the position of the match:</p>
+<p>Search a string for "divya", and display the position of the match:</p>
 
 <p id="demo"></p>
 
 <script>
-let text = "Visit W3Schools!"; 
-let n = text.search("W3Schools");
+let text = "hi divya!"; 
+let n = text.search("divya");
 document.getElementById("demo").innerHTML = n;
 </script>
 
@@ -69,4 +68,4 @@ document.getElementById("demo").innerHTML = n;
 ```
 
 Output:
-6
+3
