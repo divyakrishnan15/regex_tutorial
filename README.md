@@ -35,7 +35,7 @@
 
         9. [Screenshot](#screenshot) 
  
- ## Description :  
+ ## Character Classes: :  
  <a name="Description"></a>
 asdas
 
@@ -46,8 +46,27 @@ asdas
 
 
 
- ## Installation :  
+ ## Using String search() With a String :  
  <a name="Installation"></a> 
-```shell 
-npm i express,nodemon,dotenv,path,mysql2,express-handlebars,seeds,socket.io
+```shell
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Methods</h1>
+<p>Search a string for "W3Schools", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Visit W3Schools!"; 
+let n = text.search("W3Schools");
+document.getElementById("demo").innerHTML = n;
+</script>
+
+</body>
+</html>
 ```
+
+Output:
+6
