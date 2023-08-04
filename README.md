@@ -98,3 +98,86 @@ Output:
 Search a string for "divya", and display the position of the match:
 
 6
+
+
+ ## 3. Use String replace() With a Regular Expression :  
+ <a name="Installation"></a> 
+```shell
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Replace "car" with "bus" in the paragraph below:</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo">This is a car</p>
+
+<script>
+let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML =
+  text.replace(/car/i, "bus");
+</script>
+
+</body>
+</html>
+```
+
+Output:
+Replace "car" with "bus" in the paragraph below:
+
+Try it
+Please visit bus!
+
+ ## 4. Using String search() With a Regular Expression :  
+ <a name="Installation"></a> 
+```shell
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Search for an "i" in the next paragraph:</p>
+<p id="p01">This is a car!</p>
+<p id="demo"></p>
+
+<script>
+let text = document.getElementById("p01").innerHTML;
+const pattern = /i/;
+document.getElementById("demo").innerHTML = pattern.test(text);
+</script>
+
+</body>
+</html>
+```
+
+Output:
+Search for an "i" in the next paragraph:
+
+This is a car!
+
+true
+
+
+ ## 5. Using String search() With a Regular Expression :  
+ <a name="Installation"></a> 
+```shell
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Search a string for "divya", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "hi divya!"; 
+let n = text.search(/w3Schools/i);
+document.getElementById("demo").innerHTML = n;
+</script>
+
+</body>
+</html>
+```
+
+Output:
+Search a string for "divya", and display the position of the match:
+
+6
