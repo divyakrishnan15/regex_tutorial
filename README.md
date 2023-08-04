@@ -38,7 +38,7 @@
 
 
 ## Regular Expression Modifiers / flags
-<a name="Modifiers"></a>
+<a id="Modifiers"></a>
 | Modifier      | Description |
 | ----------- | ----------- |
 | i   | Case-insensitive matching |
@@ -55,7 +55,7 @@
 
 
 ## Metacharacters
-<a name="Metacharacters"></a>
+<a id="Metacharacters"></a>
 | Metacharacter      | Description |
 | ----------- | ----------- |
 | \w     | Match alphanumeric (a-z, A-Z, 0-9 and underscore(_))   |
@@ -78,7 +78,7 @@
 
 
 ## Quantifiers 
-<a name="Quantifiers"></a>
+<a id="Quantifiers"></a>
 | Quantifier      | Description |
 | ----------- | ----------- |
 | n+     | Match a string with atleast one n  |
@@ -88,7 +88,7 @@
 
 
 ## Sets
-<a name="Sets"></a>
+<a id="Sets"></a>
 | Modifier      | Description |
 | ----------- | ----------- |
 | [abc]   | Matches any of a (or) b (or) c. It does not match abc |
@@ -104,7 +104,7 @@
 
 
 ## Groups:
-<a name="Groups"></a>
+<a id="Groups"></a>
 | Expresions      | Description |
 | ----------- | ----------- |
 | ( )   | 	Matches the expression inside the parentheses and groups it which we can capture as required |
@@ -118,7 +118,7 @@
 
 
 ## Assertions:
-<a name="Assertions"></a>
+<a id="Assertions"></a>
 | Expression      | Description |
 | ----------- | ----------- |
 | A(?=B)   | This matches the expression A only if it is followed by B. (Positive look ahead assertion) |
@@ -132,7 +132,7 @@
 
 
  ## 1. Using String search() With a String :  
- <a name="Installation"></a> 
+ <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
 <html>
@@ -159,7 +159,7 @@ Search a string for "divya", and display the position of the match:
 
 
  ## 2. Using String search() With a Regular Expression :  
- <a name="Installation"></a> 
+ <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
 <html>
@@ -186,7 +186,7 @@ Search a string for "divya", and display the position of the match:
 
 
  ## 3. Use String replace() With a Regular Expression :  
- <a name="Installation"></a> 
+ <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
 <html>
@@ -213,7 +213,7 @@ Try it
 Please visit bus!
 
  ## 4. Using test() With a Regular Expression :  
- <a name="Installation"></a> 
+ <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
 <html>
@@ -242,7 +242,7 @@ true
 
 
  ## 5. Using exec() With a Regular Expression :  
- <a name="Installation"></a> 
+ <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
 <html>
