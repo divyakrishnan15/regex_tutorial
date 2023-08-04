@@ -193,9 +193,19 @@ Found i in position 2 in the text: This is a car!
 ##Metacharacters
 | Metacharacter      | Description |
 | ----------- | ----------- |
-| \d     | Find a digit       |
-| \s   | Find a character        |
-| \b  | Find a match at beginning of word \bdivya or Find a match at end of word divya\b       |
+| \w     | Match alphanumeric (a-z, A-Z, 0-9 and underscore(_))   |
+| \W     | Match NON alphanumerc other than (not a-z, notA-Z, not0-9, not underscore)   |
+| \d     | Match a digit (0-9)  |
+| \D     | Match non digit (not 0-9)  |
+| \s     | Match whitespace characters with \t, \n, \r and space characters  |
+| \S     | Match non-whitespace characters  |
+| \A     | Match string to right at absolute start of string whether in single / multiline |
+| \Z     | Match string to left at absolute end of string whether in single / multiline |
+| \n     | Match a newline character |
+| \t     | Match a tab character |
+| \b     | Find a match at beginning of word \bdivya or Find a match at end of word divya\b       |
+| \B     | Find a match that is non-boundary  |
+
 
 
 
