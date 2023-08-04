@@ -46,7 +46,7 @@ asdas
 
 
 
- ## Using String search() With a String :  
+ ## 1. Using String search() With a String :  
  <a name="Installation"></a> 
 ```shell
 <!DOCTYPE html>
@@ -60,6 +60,33 @@ asdas
 <script>
 let text = "hi divya!"; 
 let n = text.search("divya");
+document.getElementById("demo").innerHTML = n;
+</script>
+
+</body>
+</html>
+```
+
+Output:
+Search a string for "divya", and display the position of the match:
+
+6
+
+
+ ## 2. Using String search() With a Regular Expression :  
+ <a name="Installation"></a> 
+```shell
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Search a string for "divya", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "hi divya!"; 
+let n = text.search(/w3Schools/i);
 document.getElementById("demo").innerHTML = n;
 </script>
 
