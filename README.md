@@ -177,3 +177,34 @@ document.getElementById("demo").innerHTML =
 
 Output:
 Found i in position 2 in the text: This is a car!
+
+
+##Regular Expression Modifiers
+| Modifier      | Description |
+| ----------- | ----------- |
+| i      | case-insensitive matching       |
+| g   | global match        |
+| m   | multi line matching        |
+
+
+
+
+
+##Metacharacters
+| Metacharacter      | Description |
+| ----------- | ----------- |
+| \d     | Find a digit       |
+| \s   | Find a character        |
+| \b  | Find a match at beginning of word \bdivya or Find a match at end of word divya\b       |
+
+
+
+
+
+
+##Quantifiers 
+| Quantifier      | Description |
+| ----------- | ----------- |
+| n+     | Match a string with atleast one n  |
+| n*   | Match a string with 0 or more occurances of n  |
+| n?   | Match a string with 0 or 1 occurance of n   |
