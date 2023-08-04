@@ -37,3 +37,16 @@
  
  ## Description :  
  <a name="Description"></a>
+
+
+     | Github Username  | **Email id** | **Github Repo link** | **Deployed Url** | **Contributor** |
+    | --- | --- | --- | --- | --- |
+    | [divyakrishnan15](https://github.com/divyakrishnan15) | divya@gmail.com | [BookingApp](https://github.com/divyakrishnan15/BookingApp/) | [BookingApp]([https://divyakrishnan15.github.io/BookingApp/](https://vacation-booking-app-426edb2cb493.herokuapp.com/)) | Divya Krishnan,Kato Cambly,Alekhya Vinni,Joshua Crawford,Peter Bhagoutie |
+
+
+
+ ## Installation :  
+ <a name="Installation"></a> 
+```shell 
+npm i express,nodemon,dotenv,path,mysql2,express-handlebars,seeds,socket.io
+```
