@@ -131,7 +131,7 @@
 
 
 
- ## 1. Using String search() With a String :  
+ ## 1. search() without regex:  
  <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
@@ -158,7 +158,7 @@ Search a string for "divya", and display the position of the match:
 6
 
 
- ## 2. Using String search() With a Regular Expression :  
+ ## 2. search() With a Regular Expression :  
  <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
@@ -185,7 +185,7 @@ Search a string for "divya", and display the position of the match:
 6
 
 
- ## 3. Use String replace() With a Regular Expression :  
+ ## 3. replace() With a Regular Expression :  
  <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
@@ -212,7 +212,7 @@ Replace "car" with "bus" in the paragraph below:
 Try it
 Please visit bus!
 
- ## 4. Using test() With a Regular Expression :  
+ ## 4. test() With a Regular Expression :  
  <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
@@ -241,7 +241,7 @@ This is a car!
 true
 
 
- ## 5. Using exec() With a Regular Expression :  
+ ## 5. exec() With a Regular Expression :  
  <a id="Installation"></a> 
 ```shell
 <!DOCTYPE html>
