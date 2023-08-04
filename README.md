@@ -127,7 +127,7 @@ Replace "car" with "bus" in the paragraph below:
 Try it
 Please visit bus!
 
- ## 4. Using String search() With a Regular Expression :  
+ ## 4. Using test() With a Regular Expression :  
  <a name="Installation"></a> 
 ```shell
 <!DOCTYPE html>
@@ -156,21 +156,19 @@ This is a car!
 true
 
 
- ## 5. Using String search() With a Regular Expression :  
+ ## 5. Using exec() With a Regular Expression :  
  <a name="Installation"></a> 
 ```shell
 <!DOCTYPE html>
 <html>
 <body>
 
-<p>Search a string for "divya", and display the position of the match:</p>
-
 <p id="demo"></p>
 
 <script>
-let text = "hi divya!"; 
-let n = text.search(/w3Schools/i);
-document.getElementById("demo").innerHTML = n;
+const obj = /i/.exec("This is a car!");
+document.getElementById("demo").innerHTML =
+"Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
 </script>
 
 </body>
@@ -178,6 +176,4 @@ document.getElementById("demo").innerHTML = n;
 ```
 
 Output:
-Search a string for "divya", and display the position of the match:
-
-6
+Found i in position 2 in the text: This is a car!
