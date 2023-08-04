@@ -1,4 +1,4 @@
-
+..
  
 <h1 align="center">REGEX (regular expression) Tutorial👋</h1>
 
@@ -179,12 +179,17 @@ Output:
 Found i in position 2 in the text: This is a car!
 
 
-##Regular Expression Modifiers
+##Regular Expression Modifiers / flags
 | Modifier      | Description |
 | ----------- | ----------- |
-| i      | case-insensitive matching       |
-| g   | global match        |
-| m   | multi line matching        |
+| i   | Case-insensitive matching |
+| g   | Global match |
+| m   | ^ and $ start and end of the multi line matching  |
+| a   | Matched ASCII only  |
+| L   | Locale character classes   |
+| s   | Matches evrything including newline as well    |
+| u   | Matches unicode character classes   |
+| x   | Allow spaces and comments    |
 
 
 
