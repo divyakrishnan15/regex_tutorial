@@ -21,28 +21,113 @@
 
         2.  [Description](#Description) 
 
-        3.  [Questions](#Questions) 
+        3.  [Modifiers](#Modifiers) 
 
-        4.  [Installation](#Installation) 
+        4.  [Metacharacters](#Metacharacters) 
 
-        5.  [Usage](#Usage) 
+        5.  [Quantifiers](#Quantifiers) 
 
-        6.  [Video](#Video) 
+        6.  [Sets](#Sets) 
 
-        7.  [License](#License) 
+        7.  [Groups](#Groups) 
 
-        8. [Tests](#Tests) 
+        8. [Assertions](#Assertions) 
 
         9. [Screenshot](#screenshot) 
  
- ## Character Classes: :  
- <a name="Description"></a>
-asdas
 
-| Syntax      | Description |
+
+## Regular Expression Modifiers / flags
+<a name="Modifiers"></a>
+| Modifier      | Description |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| i   | Case-insensitive matching |
+| g   | Global match |
+| m   | ^ and $ start and end of the multi line matching  |
+| a   | Matched ASCII only  |
+| L   | Locale character classes   |
+| s   | Matches evrything including newline as well    |
+| u   | Matches unicode character classes   |
+| x   | Allow spaces and comments    |
+
+
+
+
+
+## Metacharacters
+<a name="Metacharacters"></a>
+| Metacharacter      | Description |
+| ----------- | ----------- |
+| \w     | Match alphanumeric (a-z, A-Z, 0-9 and underscore(_))   |
+| \W     | Match NON alphanumerc other than (not a-z, notA-Z, not0-9, not underscore)   |
+| \d     | Match a digit (0-9)  |
+| \D     | Match non digit (not 0-9)  |
+| \s     | Match whitespace characters with \t, \n, \r and space characters  |
+| \S     | Match non-whitespace characters  |
+| \A     | Match string to right at absolute start of string whether in single / multiline |
+| \Z     | Match string to left at absolute end of string whether in single / multiline |
+| \n     | Match a newline character |
+| \t     | Match a tab character |
+| \b     | Find a match at beginning of word \bdivya or Find a match at end of word divya\b       |
+| \B     | Find a match that is non-boundary  |
+
+
+
+
+
+
+
+## Quantifiers 
+<a name="Quantifiers"></a>
+| Quantifier      | Description |
+| ----------- | ----------- |
+| n+     | Match a string with atleast one n  |
+| n*   | Match a string with 0 or more occurances of n  |
+| n?   | Match a string with 0 or 1 occurance of n   |
+
+
+
+## Sets
+<a name="Sets"></a>
+| Modifier      | Description |
+| ----------- | ----------- |
+| [abc]   | Matches any of a (or) b (or) c. It does not match abc |
+| [a-z]   | Matches any alphabet from a-z |
+| [A-Z]   | Matches any alphabet in Capital from A-Z  |
+| [a\-p]  | Matches a, -, or p. It matches – because \ escapes it.  |
+| [-z]   | Matches – or z   |
+| [a-z0-9]   | 	Matches characters from a to z or from 0 to 9.   |
+| [(+*)]   | Special characters become literal inside a set, so this matches (, +, *, or )   |
+| [^ab5]  | Adding ^ excludes any character in the set. Here, it matches characters that are not a, b, or 5    |
+| \[a\]   | 	Matches [a] because both parentheses [ ] are escaped  |
+
+
+
+## Groups:
+<a name="Groups"></a>
+| Expresions      | Description |
+| ----------- | ----------- |
+| ( )   | 	Matches the expression inside the parentheses and groups it which we can capture as required |
+| (?#…)   | Read a comment |
+| (?PAB)   | Matches the expression AB, which can be retrieved with the group name.  |
+| (?:A)   | 	Matches the expression as represented by A, but cannot be retrieved afterwards.  |
+| (?P=group)   | Matches the expression matched by an earlier group named “group”   |
+
+
+
+
+
+## Assertions:
+<a name="Assertions"></a>
+| Expression      | Description |
+| ----------- | ----------- |
+| A(?=B)   | This matches the expression A only if it is followed by B. (Positive look ahead assertion) |
+| A(?!B)   | 	This matches the expression A only if it is not followed by B. (Negative look ahead assertion) |
+| (?<=B)A   | 	This matches the expression A only if B is immediate to its left.  (Positive look behind assertion)  |
+| (?<!B)A   | This matches the expression A only if B is not immediately to its left. (Negative look behind assertion)  |
+| (?()|)   | 	If else conditional   |
+
+
 
 
 
@@ -177,88 +262,3 @@ document.getElementById("demo").innerHTML =
 
 Output:
 Found i in position 2 in the text: This is a car!
-
-
-## Regular Expression Modifiers / flags
-| Modifier      | Description |
-| ----------- | ----------- |
-| i   | Case-insensitive matching |
-| g   | Global match |
-| m   | ^ and $ start and end of the multi line matching  |
-| a   | Matched ASCII only  |
-| L   | Locale character classes   |
-| s   | Matches evrything including newline as well    |
-| u   | Matches unicode character classes   |
-| x   | Allow spaces and comments    |
-
-
-
-
-
-## Metacharacters
-| Metacharacter      | Description |
-| ----------- | ----------- |
-| \w     | Match alphanumeric (a-z, A-Z, 0-9 and underscore(_))   |
-| \W     | Match NON alphanumerc other than (not a-z, notA-Z, not0-9, not underscore)   |
-| \d     | Match a digit (0-9)  |
-| \D     | Match non digit (not 0-9)  |
-| \s     | Match whitespace characters with \t, \n, \r and space characters  |
-| \S     | Match non-whitespace characters  |
-| \A     | Match string to right at absolute start of string whether in single / multiline |
-| \Z     | Match string to left at absolute end of string whether in single / multiline |
-| \n     | Match a newline character |
-| \t     | Match a tab character |
-| \b     | Find a match at beginning of word \bdivya or Find a match at end of word divya\b       |
-| \B     | Find a match that is non-boundary  |
-
-
-
-
-
-
-
-## Quantifiers 
-| Quantifier      | Description |
-| ----------- | ----------- |
-| n+     | Match a string with atleast one n  |
-| n*   | Match a string with 0 or more occurances of n  |
-| n?   | Match a string with 0 or 1 occurance of n   |
-
-
-
-## Sets
-| Modifier      | Description |
-| ----------- | ----------- |
-| [abc]   | Matches any of a (or) b (or) c. It does not match abc |
-| [a-z]   | Matches any alphabet from a-z |
-| [A-Z]   | Matches any alphabet in Capital from A-Z  |
-| [a\-p]  | Matches a, -, or p. It matches – because \ escapes it.  |
-| [-z]   | Matches – or z   |
-| [a-z0-9]   | 	Matches characters from a to z or from 0 to 9.   |
-| [(+*)]   | Special characters become literal inside a set, so this matches (, +, *, or )   |
-| [^ab5]  | Adding ^ excludes any character in the set. Here, it matches characters that are not a, b, or 5    |
-| \[a\]   | 	Matches [a] because both parentheses [ ] are escaped  |
-
-
-
-## Groups:
-| Expresions      | Description |
-| ----------- | ----------- |
-| ( )   | 	Matches the expression inside the parentheses and groups it which we can capture as required |
-| (?#…)   | Read a comment |
-| (?PAB)   | Matches the expression AB, which can be retrieved with the group name.  |
-| (?:A)   | 	Matches the expression as represented by A, but cannot be retrieved afterwards.  |
-| (?P=group)   | Matches the expression matched by an earlier group named “group”   |
-
-
-
-
-
-## Assertions:
-| Expression      | Description |
-| ----------- | ----------- |
-| A(?=B)   | This matches the expression A only if it is followed by B. (Positive look ahead assertion) |
-| A(?!B)   | 	This matches the expression A only if it is not followed by B. (Negative look ahead assertion) |
-| (?<=B)A   | 	This matches the expression A only if B is immediate to its left.  (Positive look behind assertion)  |
-| (?<!B)A   | This matches the expression A only if B is not immediately to its left. (Negative look behind assertion)  |
-| (?()|)   | 	If else conditional   |
