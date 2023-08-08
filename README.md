@@ -95,8 +95,7 @@
  ```<script>
 let text = "Is this all there is?";
 let result = text.match(/[h]/g);
-document.getElementById("demo").innerHTML = result;
-</script> </pre>```|
+document.getElementById("demo").innerHTML = result; </script> </pre>```|
 | [a-z]   | Matches any alphabet from a-z |
 | [A-Z]   | Matches any alphabet in Capital from A-Z  |
 | [a\-p]  | Matches a, -, or p. It matches – because \ escapes it.  |
