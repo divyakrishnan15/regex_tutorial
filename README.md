@@ -86,6 +86,19 @@
 | n?   | Match a string with 0 or 1 occurance of n   |
 
 
++-------+-----+-------------------------------------------------------+--+--+
+|       |     |                                                       |  |  |
++-------+-----+-------------------------------------------------------+--+--+
+| [abc] | abc | <pre><code><p id="demo"></p>                          |  |  |
+|       |     |  <script>let text = "Is this all there is?";          |  |  |
+|       |     |   let result = text.match(/[h]/g);                    |  |  |
+|       |     |   document.getElementById("demo").innerHTML = result; |  |  |
+|       |     |  </script> </code></pre>                              |  |  |
++-------+-----+-------------------------------------------------------+--+--+
+|       |     |                                                       |  |  |
++-------+-----+-------------------------------------------------------+--+--+
+|       |     |                                                       |  |  |
++-------+-----+-------------------------------------------------------+--+--+
 
 ## Sets
 <a id="Sets"></a>
@@ -176,7 +189,7 @@ Search a string for "divya", and display the position of the match:
 
 <script>
 let text = "hi divya!"; 
-let n = text.search(/w3Schools/i);
+let n = text.search(/divya/i);
 document.getElementById("demo").innerHTML = n;
 </script>
 
