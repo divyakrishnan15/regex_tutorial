@@ -79,31 +79,26 @@
 
 ## Quantifiers 
 <a id="Quantifiers"></a>
-| Quantifier      | Description | Code |
-| ----------- | ----------- | ----------- |
-| n+     | Match a string with atleast one n  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Is this all there is?";`<br>  `let result = text.match(/[h]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> |
-| n*   | Match a string with 0 or more occurances of n  | aa |
-| n?   | Match a string with 0 or 1 occurance of n   | aa |	
+| Quantifier      | Description | Code | Output |
+| ----------- | ----------- | ----------- | ----------- |
+| n+     | Match a string with atleast one n  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Hellooo World! Hello Divya!";`<br>  `let result = text.match(/o+/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> ooo,o,o</pre> |
+| n*   | Match a string with 0 or more occurances of n  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Hellooo World! Hello Divya!";`<br>  `let result = text.match(/lo*/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> l,looo,l,l,lo</pre> |
+| n?   | Match a string with 0 or 1 occurance of n   | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "1, 100 or 1000?";`<br>  `let result = text.match(/10?/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> 1,10,10</pre> |
 
 
 ## Sets
 <a id="Sets"></a>
-| Modifier      | Description |
-| ----------- | ----------- |
-| [abc]   | Matches any of a (or) b (or) c. It does not match abc |
-<pre><code><p id="demo"></p>
- <script>let text = "Is this all there is?";
-  let result = text.match(/[h]/g);
-  document.getElementById("demo").innerHTML = result;
- </script> </code></pre>|
-| [a-z]   | Matches any alphabet from a-z |
-| [A-Z]   | Matches any alphabet in Capital from A-Z  |
-| [a\-p]  | Matches a, -, or p. It matches – because \ escapes it.  |
-| [-z]   | Matches – or z   |
-| [a-z0-9]   | 	Matches characters from a to z or from 0 to 9.   |
-| [(+*)]   | Special characters become literal inside a set, so this matches (, +, *, or )   |
-| [^ab5]  | Adding ^ excludes any character in the set. Here, it matches characters that are not a, b, or 5    |
-| \[a\]   | 	Matches [a] because both parentheses [ ] are escaped  |
+| Modifier      | Description | Code | Output |
+| ----------- | ----------- | ----------- | ----------- |
+| [abc]   | Matches any of a (or) b (or) c. It does not match abc | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Yes this is amazing isn't it";`<br>  `let result = text.match(/[ia]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> i,i,a,a,i,i,i</pre> |
+| [a-p]   | Matches any alphabet from a-p | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "abcdefghijklmnopqrstuvwxyz";`<br>  `let result = text.match(/[a-p]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p</pre> |
+| [A-Z]   | Matches any alphabet in Capital from A-Z  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "AbCdEfGhIjKlMnOpQrStUvWxYz";`<br>  `let result = text.match(/[A-Z]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> A,C,E,G,I,K,M,O,Q,S,U,W,Y</pre> |
+| [a\-p]  | Matches a, -, or p. It matches – because \ escapes it.  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "abcdefghijklmnopqrstuvwxyz-";`<br>  `let result = text.match(/[a\-p]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> a,p,-</pre> |
+| [-z]   | Matches – or z   | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "abcdefghijklmnopqrstuvwxyz----";`<br>  `let result = text.match(/[-z]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> z,-,-,-,-</pre> |
+| [a-p0-9]   | 	Matches characters from a to p or from 0 to 9. | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "abcdefghijklmnopqrstuvwxyz095";`<br>  `let result = text.match(/[a-p0-9]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,0,9,5</pre> |
+| [(+*)]   | Special characters become literal inside a set, so this matches (, +, *, or ) | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "abcd(efgh+ijklmnopqr**stuvwxyz-)))";`<br>  `let result = text.match(/[(+*)]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> (,+,*,*,),),)</pre> |
+| [^ab5]  | Adding ^ excludes any character in the set. Here, it matches characters that are not a, b, or 5    | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "abcd^ef5gh^+ijkl45-";`<br>  `let result = text.match(/[^ab5]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> c,d,^,e,f,5,g,h,^,+,i,j,k,l,4,5,-</pre> |
+| \[i\]   | 	Matches [i] because both parentheses [ ] are escaped  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Yes this is amazing isn't it";`<br>  `let result = text.match(/[i]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> i,i,i,i,i</pre> |
 
 
 
