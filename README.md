@@ -79,26 +79,12 @@
 
 ## Quantifiers 
 <a id="Quantifiers"></a>
-| Quantifier      | Description |
-| ----------- | ----------- |
-| n+     | Match a string with atleast one n  |
-| n*   | Match a string with 0 or more occurances of n  |
-| n?   | Match a string with 0 or 1 occurance of n   |
+| Quantifier      | Description | Code |
+| ----------- | ----------- | ----------- |
+| n+     | Match a string with atleast one n  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Is this all there is?";`<br>  `let result = text.match(/[h]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> |
+| n*   | Match a string with 0 or more occurances of n  | aa |
+| n?   | Match a string with 0 or 1 occurance of n   | aa |	
 
-
-+-------+-----+-------------------------------------------------------+--+--+
-|       |     |                                                       |  |  |
-+-------+-----+-------------------------------------------------------+--+--+
-| [abc] | abc | <pre><code><p id="demo"></p>                          |  |  |
-|       |     |  <script>let text = "Is this all there is?";          |  |  |
-|       |     |   let result = text.match(/[h]/g);                    |  |  |
-|       |     |   document.getElementById("demo").innerHTML = result; |  |  |
-|       |     |  </script> </code></pre>                              |  |  |
-+-------+-----+-------------------------------------------------------+--+--+
-|       |     |                                                       |  |  |
-+-------+-----+-------------------------------------------------------+--+--+
-|       |     |                                                       |  |  |
-+-------+-----+-------------------------------------------------------+--+--+
 
 ## Sets
 <a id="Sets"></a>
