@@ -13,7 +13,7 @@
 </p>
 
 ## Description
-<a id="Description"></a>
+<a id="description"></a>
 In this tutorial you will see how to do create regex and gaining indepth knowledge about it! This tutorial features javascript code on the specific regex and its output. <br/>
 You can easily follow along in your language of choice by copying the regex inside functions mentioned below and porting the functions into your language:
 1. match()
@@ -26,19 +26,19 @@ This tutorial is created by [Divya Krishnan](#about-me)
 
  ## Table Of Contents : 
  1.  [Title](#title)
- 2.  [Description](#Description)
+ 2.  [Description](#description)
  3.  Tables
-        1.  [Modifiers](#Modifiers) 
+        1.  [Modifiers](#modifiers) 
 
-        2.  [Sets](#Sets)
+        2.  [Sets](#sets)
 
-        3.  [Metacharacters](#Metacharacters)
+        3.  [Metacharacters](#metacharacters)
 
-        4.  [Quantifiers](#Quantifiers)   
+        4.  [Quantifiers](#quantifiers)   
 
-        5.  [Groups](#Groups) 
+        5.  [Groups](#groups) 
 
-        6.  [Assertions](#Assertions)
+        6.  [Assertions](#assertions)
 
  4.  [search() without Regex](#search1)
  5.  [search() with Regex](#search2)
@@ -49,7 +49,7 @@ This tutorial is created by [Divya Krishnan](#about-me)
 
 
 ## Modifiers / flags
-<a id="Modifiers"></a>
+<a id="modifiers"></a>
 Modifiers are regex that indicates the matches it needs to do, with the help of shorthands.
 | Modifier      | Description |
 | ----------- | ----------- |
@@ -63,7 +63,7 @@ Modifiers are regex that indicates the matches it needs to do, with the help of 
 | x   | Allow spaces and comments    |
 
 ## Sets
-<a id="Sets"></a>
+<a id="sets"></a>
 Sets are regex to select certain characters. Sets can be identified when they are wrapped in "[" and "]"
 | Modifier | Description | Code | Output | 
 | ----------- | ----------- | ----------- | ----------- |
@@ -78,7 +78,7 @@ Sets are regex to select certain characters. Sets can be identified when they ar
 | \[i\]   | 	Matches [i] because both parentheses [ ] are escaped  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Yes this is amazing isn't it";`<br>  `let result = text.match(/[i]/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> i,i,i,i,i</pre> |
 
 ## Metacharacters
-<a id="Metacharacters"></a>
+<a id="metacharacters"></a>
 Metacharacters are regex that indicates the matches it needs to do, with the help of shorthands. All metacharacters have the symbol "\" infront of them to easily identify them. Metacharacters matches multiple combinations of sets and other regex.
 | Metacharacter      | Description |
 | ----------- | ----------- |
@@ -96,7 +96,7 @@ Metacharacters are regex that indicates the matches it needs to do, with the hel
 | \B     | Find a match that is non-boundary  |
 
 ## Quantifiers 
-<a id="Quantifiers"></a>
+<a id="quantifiers"></a>
 Quantifiers are regex that indicates the number of matches it needs to do.
 | Quantifier      | Description | Code | Output |
 | ----------- | ----------- | ----------- | ----------- |
@@ -116,7 +116,7 @@ Groups are use for assigning regex to outputs into a partition, you can later re
 | (?P=group)   | Matches the expression matched by an earlier group named “group”   |
 
 ## Assertions:
-<a id="Assertions"></a>
+<a id="assertions"></a>
 Assertions are similar to "if" statements but written in regex syntax. Assertions are identified if there is a "?" in the regex.
 | Modifier      | Description | Code | Output |
 | ----------- | ----------- | ----------- | ----------- |
