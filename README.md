@@ -1,15 +1,7 @@
 <h1 align="center" id="title">REGEX (regular expression) Tutorial👋</h1>
-
-<p align="center">
-    <img src="https://img.shields.io/github/repo-size/divyakrishnan15/regex_tutorial" />
-    <img src="https://img.shields.io/github/languages/top/divyakrishnan15/regex_tutorial"  />
-    <img src="https://img.shields.io/github/issues/divyakrishnan15/regex_tutorial" />
-    <img src="https://img.shields.io/github/last-commit/divyakrishnan15/regex_tutorial" >
-    <a href="https://github.com/divyakrishnan15"><img src="https://img.shields.io/github/followers/divyakrishnan15?style=social" target="_blank" /></a
-</p>
   
 <p align="center">
-<img src="https://img.shields.io/badge/regex"  />
+<img src="https://img.shields.io/badge/regex-red"  /> <img src="https://img.shields.io/badge/M↓-gray"  /> <img src="https://img.shields.io/badge/HTML-orange"  /> <img src="https://img.shields.io/badge/Javascript-yellow"  />
 </p>
 
 ## Description
