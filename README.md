@@ -124,7 +124,7 @@
 | A(?!B)   | 	This matches the expression A only if it is not followed by B. (Negative look ahead assertion) | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "ACDEFGHIJKLMNOPQRSTUVWXYZ";`<br>  `let result = text.match(/A(?!B)/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> A</pre> |
 | (?<=B)A   | 	This matches the expression A only if B is immediate to its left.  (Positive look behind assertion)  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "BACDEFGHIJKLMNOPQRSTUVWXYZ";`<br>  `let result = text.match(/(?<=B)A/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> A</pre> |
 | (?<!B)A   | This matches the expression A only if B is not immediately to its left. (Negative look behind assertion)  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";`<br>  `let result = text.match(/(?<!B)A/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> A</pre> |
-| "(?()|)" | 	If else conditional   | | |
+| ![image](https://github.com/divyakrishnan15/regex_tutorial/assets/40469923/47fc6cfa-47c1-47bb-b829-7605d0112556) | 	If else conditional   | | |
 
 
 
