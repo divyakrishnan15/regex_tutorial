@@ -48,7 +48,7 @@ This tutorial is created by [Divya Krishnan](#about-me)
  9.  [About Me](#about-me) 
 
 
-## Modifiers / flags
+## Modifiers
 <a id="modifiers"></a>
 Modifiers are regex that indicates the matches it needs to do, with the help of shorthands.
 | Modifier      | Description |
@@ -259,7 +259,7 @@ Output:
 Found i in position 2 in the text: This is a car!
 
 
-About Me
+## About Me
 <a id="about-me"></a> 
 I am a passionate and aspiring developer with in depth knowledege of full stack applications and know languages like Java, Javascript, Express, Node JS, Python, SQL and many more.
 Through my journeys I have worked in applications that involved regex and so I decided to make a tutorial on regex explaining it with some examples and descriptions.
