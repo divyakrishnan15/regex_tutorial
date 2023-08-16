@@ -82,7 +82,7 @@
 | Quantifier      | Description | Code | Output |
 | ----------- | ----------- | ----------- | ----------- |
 | n+     | Match a string with atleast one n  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Hellooo World! Hello Divya!";`<br>  `let result = text.match(/o+/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> ooo,o,o</pre> |
-| n*   | Match a string with 0 or more occurances of n  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Hellooo World! Hello Divya!";`<br>  `let result = text.match(/lo*/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> l,looo,l,l,lo</pre> |
+| n*   | Match a string with 0 or more occurances of n  | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "Hellooo World, Divya!";`<br>  `let result = text.match(/lo*/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> l,looo,l</pre> |
 | n?   | Match a string with 0 or 1 occurance of n   | <pre>`<p id="demo"></p>`<br>`<script>`<br>  `let text = "1, 100 or 1000?";`<br>  `let result = text.match(/10?/g);`<br>  `document.getElementById("demo").innerHTML = result;`<br>`</script>`</pre> | <pre>> 1,10,10</pre> |
 
 
